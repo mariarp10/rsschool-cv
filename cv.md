@@ -2,23 +2,16 @@
 
 ## Location
 Austin, TX
-___
 
 ## Contact Information
-Email: [mf@gmail.com](mailto:mf@gmail.com)
-Phone number: [+1 512 1234567](tel:+15121234567)
-GitHub: [mariarp10](https://github.com/mariarp10)
-Codewars: [CodeMochi](https://www.codewars.com/users/CodeMochi)
-Discord: [maria_72134](https://discord.com/users/1389296278059356270)
-___
+Email: [mf@gmail.com](mailto:mf@gmail.com) | Phone number: [+1 512 1234567](tel:+15121234567)   
+GitHub: [mariarp10](https://github.com/mariarp10) | Codewars: [CodeMochi](https://www.codewars.com/users/CodeMochi) | Discord: [maria_72134](https://discord.com/users/1389296278059356270)
 
 ## Summary
 Howdy ho! 👋🏻
 I'm Maria, a Front-End Engineer with a pythonic twist, and a seasoned high-tech professional with background as a Product Owner. Over the past 1.5 years, I have built solid expertise in JavaScript, HTML5, CSS, TypeScript, RESTful APIs, OOP, and React.js, focusing on creating reliable, user-centered solutions.
 I bring to my developer role the same strengths that made me successful as a Product Owner: clear communication with stakeholders, empathy for end-users, and strong analytical thinking. 
 I thrive on solving complex problems and delivering practical, low-hanging fruit solutions that balance technical feasibility and user impact.
-
-___
 
 ## Skills
 - HTML5, CSS, JavaScript ES6
@@ -30,7 +23,6 @@ ___
 - OOP, RESTful API
 - Advanced Python
 - Algorithms
-___
 
 ## Code Examples
 ```
@@ -95,7 +87,6 @@ function solveQuadratic(a, b, c) {
   return [(-b + sqrtD) / (2 * a), (-b - sqrtD) / (2 * a)];
 }
 ```
-___
 
 ## Projects
 Below are selected coursework projects that demonstrate my growing front-end development skills. Each project reflects how I’ve progressed in using modern approaches like adaptive design, CSS grids, flexbox, and animations to build responsive and visually appealing web pages. I share these to show my commitment to improving my craft and delivering polished, user-friendly experiences.
@@ -123,7 +114,6 @@ A creative static page leveraging adaptive design, dynamic themes switching, and
 **Skills:** HTML, CSS, adaptive design, grid, theme toggling.
 
 **Links:** [Deployed page](https://mariarp10.github.io/slozhno-sosredotochitsya-fd/) | [Source Code](https://github.com/mariarp10/slozhno-sosredotochitsya-fd)
-___
 
 ## Work Experience
 
@@ -163,7 +153,6 @@ Andersen Labs is an outsourcing company with a team of 2,000+ employees who deli
 - Launched the German version of the website by leading a 6-member team and devising an adaptive process for integrating translations, securing a key client from the DACH region.
 - Spearheaded technical documentation for a 2-year project from scratch by designing project-specific Confluence templates, achieving a 62% bug reduction and boosting feature delivery speed by 37%. 
 - Transformed the design team's workflow with a specialized Jira template and checklist, enhancing task clarity and cutting operational time by 25%.
-
 
 ## Education
 **Front-End Engineer**
