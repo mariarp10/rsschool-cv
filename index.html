@@ -1,10 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maria F. — Front-End Engineer</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#contact-info">Get in touch</a>
+          </li>
+          <li>
+            <a href="#summary">Nice to meet you</a>
+          </li>
+          <li>
+            <a href="#skills">My stack</a>
+          </li>
+          <li>
+            <a href="#code-examples">Code examples</a>
+          </li>
+          <li>
+            <a href="#projects">My projects</a>
+          </li>
+          <li>
+            <a href="#experience">Work experience</a>
+          </li>
+          <li>
+            <a href="#education">Academia</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Maria Fiodorova</h1>
+      <p>Front-End Engineer</p>
+    </header>
+    <main>
+      <section>
+        <h2 id="contact-info">Contact Information</h2>
+        <ul>
+          <li>
+            <a href="mailto:mf@gmail.com">
+              mf@gmail.com
+              <img src="" alt="Email picture" />
+            </a>
+          </li>
+          <li>
+            <a href="tel:+15121234567">
+              +1 512 1234567
+              <img src="" alt="Phone picture" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/mariarp10">
+              mariarp10
+              <img src="" alt="GitHub logo" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.codewars.com/users/CodeMochi">
+              CodeMochi
+              <img src="" alt="Codewars logo" />
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.com/users/1389296278059356270">
+              maria_72134
+              <img src="" alt="Discord logo" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 id="summary">Summary</h2>
+        <p>
+          Howdy ho! 👋🏻 I&apos;m Maria, a Front-End Engineer with a pythonic
+          twist, and a seasoned high-tech professional with background as a
+          Product Owner. Over the past 1.5 years, I have built solid expertise
+          in JavaScript, HTML5, CSS, TypeScript, RESTful APIs, OOP, and
+          React.js, focusing on creating reliable, user-centered solutions. I
+          bring to my developer role the same strengths that made me successful
+          as a Product Owner: clear communication with stakeholders, empathy for
+          end-users, and strong analytical thinking. I thrive on solving complex
+          problems and delivering practical, low-hanging fruit solutions that
+          balance technical feasibility and user impact.
+        </p>
+      </section>
+      <section>
+        <h2 id="skills">Skills</h2>
+        <ul>
+          <li>HTML5, CSS, JavaScript ES6</li>
+          <li>TypeScript</li>
+          <li>React.js, testing React apps</li>
+          <li>Git, GitHub</li>
+          <li>Chrome DevTools, Debugging</li>
+          <li>Figma for web development</li>
+          <li>OOP, RESTful API</li>
+          <li>Advanced Python</li>
+          <li>Algorithms</li>
+        </ul>
+      </section>
+      <section id="code-examples">
+        <h2>Code Examples</h2>
+        <ul>
+          <li>
+            <pre>
+              <code>
+/**
+* Finds the unique number in an array where all other numbers appear more than once.
+*
+* @param {number[]} arr - An array of numbers that contains exactly one unique number.
+* @returns {number} The unique number that appears only once in the array.
+
+@timecomplexity O(n) - It loops through the array twice: once to count and once to find the unique number.
+*/
+function findUniq(arr) {
+const counter = new Map();
+let unique;
+for (const num of arr) {
+  if (!counter.has(num)) {
+    counter.set(num, 1);
+  } else {
+    counter.set(num, counter.get(num) + 1);
+  }
+}
+for (const [key, value] of counter.entries()) {
+  if (value === 1) {
+    unique = key;
+  }
+}
+return unique;
+}
+              </code>
+            </pre>
+          </li>
+          <li>
+            <pre>
+              <code>
+/**
+* Solves a quadratic equation of the form ax² + bx + c = 0.
+* Uses a cache to store square root values for repeated discriminants.
+*
+* @param {number} a - The coefficient of x².
+* @param {number} b - The coefficient of x.
+* @param {number} c - The constant term.
+* @returns {(number[]|undefined)} An array of real solutions, or undefined if there are no real solutions.
+*/
+const sqrtCache = new Map();
+                 
+function solveQuadratic(a, b, c) {
+if (a === 0) {
+if (b === 0) return;
+  return [-c / b];
+}
+                 
+const D = b ** 2 - 4 * a * c;
+                 
+if (D &lt; 0) return;
+  if (D === 0) return [-b / (2 * a)];
+                 
+let sqrtD;
+if (sqrtCache.has(D)) {
+  sqrtD = sqrtCache.get(D);
+} else {
+  sqrtD = Math.sqrt(D);
+  sqrtCache.set(D, sqrtD);
+}
+                 
+return [(-b + sqrtD) / (2 * a), (-b - sqrtD) / (2 * a)];
+}                    
+              </code>
+            </pre>
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Below are selected coursework projects that demonstrate my growing
+          front-end development skills. Each project reflects how I&apos;ve
+          progressed in using modern approaches like adaptive design, CSS grids,
+          flexbox, and animations to build responsive and visually appealing web
+          pages. I share these to show my commitment to improving my craft and
+          delivering polished, user-friendly experiences.
+        </p>
+        <ul>
+          <li>
+            <article>
+              <h3>Sales Bonus</h3>
+              <span> JavaScript App </span>
+              <p>
+                The program calculates bonuses for sales reps based on their
+                performance, and outputs a table with accumulated data on the
+                sales reps.
+              </p>
+              <ul>
+                <li>
+                  <span> JavaScript </span>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="https://github.com/mariarp10/sales-bonus">
+                    Source code
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Closing Tag</h3>
+              <span> Responsive Web Page </span>
+              <p>
+                A static landing page with animated visual elements (buttons,
+                icon) and adaptive design for all screen sizes.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>adaptive design</li>
+                <li>animations</li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="https://mariarp10.github.io/zakrivayuschiy-teg-f/">
+                    Deployed page
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/mariarp10/zakrivayuschiy-teg-f">
+                    Source code
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h3>Difficult to Focus</h3>
+              <span> Responsive Web Page with Theme Toggle </span>
+              <p>
+                A creative static page leveraging adaptive design, dynamic
+                themes switching, and complex grid for pictures gallery.
+              </p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>adaptive design</li>
+                <li>grid</li>
+                <li>theme toggling</li>
+              </ul>
+              <ul>
+                <li>
+                  <a
+                    href="https://mariarp10.github.io/slozhno-sosredotochitsya-fd/"
+                  >
+                    Deployed page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/mariarp10/slozhno-sosredotochitsya-fd"
+                  >
+                    Source code
+                  </a>
+                </li>
+              </ul>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <section id="experience">
+        <h2>Work Experience</h2>
+        <article>
+          <h3>Software Engineer</h3>
+          <span>
+            Career Transition &amp; Ongoing Learning Jan 2024 - present
+          </span>
+          <p>
+            Actively participating in programming bootcamps and self-directed
+            study to build professional-level programming skills, focusing on
+            Front-End development.
+          </p>
+          <h4>Results and Achievements:</h4>
+          <ul>
+            <li>
+              solved 2.8k+ programming challenges over the past year,
+              strengthening problem-solving skills and algorithmic thinking
+            </li>
+            <li>
+              developed 6 front-end projects applying modern approaches such as
+              adaptive design, CSS Grid, Flexbox, and animations
+            </li>
+            <li>
+              completed 3 intensive programming bootcamps within the last 18
+              months, practicing modern in-demand programming languages such as
+              Python and JavaScript
+            </li>
+          </ul>
+          <p>
+            Future plans include mastering server-side programming with Node.js
+            and Django.
+          </p>
+        </article>
+        <article>
+          <h3>Product Owner</h3>
+          <span>
+            at <a href="https://www.armadalabs.com/">Armada Labs</a> Oct 2022 -
+            Oct 2023
+          </span>
+          <h4>About the project</h4>
+          <p>
+            Implementing an MVP of an investment platform for a US-based client.
+          </p>
+          <h4>Results and Achievements</h4>
+          <ul>
+            <li>
+              Conducted the Discovery Phase, transforming client documentation
+              into a streamlined backlog in 3 weeks through wireframing, market
+              research, and key stakeholder interviews to refine user stories
+            </li>
+            <li>
+              Developed and delivered a robust MVP in 4 months by leading design
+              and engineering teams, resolving tech/design challenges, planning
+              sprints, and providing consistent updates to the client.
+            </li>
+          </ul>
+        </article>
+        <article>
+          <h4>Product Owner</h4>
+          <span> at <a href="https://andersenlab.com/">Andersen Lab</a> </span>
+          <span> Nov 2020 - Oct 2022 </span>
+          <h4>About the project</h4>
+          <p>
+            Ongoing development of the company&apos;s corporate website, adding
+            new features and lead-generation mechanics to attract potential
+            partners.
+          </p>
+          <h4>Results and Achievements</h4>
+          <ul>
+            <li>
+              Launched the German version of the website by leading a 6-member
+              team and devising an adaptive process for integrating
+              translations, securing a key client from the DACH region.
+            </li>
+            <li>
+              Spearheaded technical documentation for a 2-year project from
+              scratch by designing project-specific Confluence templates,
+              achieving a 62% bug reduction and boosting feature delivery speed
+              by 37%.
+            </li>
+            <li>
+              Transformed the design team&apos;s workflow with a specialized
+              Jira template and checklist, enhancing task clarity and cutting
+              operational time by 25%.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li>
+            <article>
+              <h3>Front-End Engineer</h3>
+              <p>TripleTen Software Engineering Bootcamp</p>
+              <span> April 2025 - present </span>
+            </article>
+          </li>
+          <li>
+            <h3>Python Engineer</h3>
+            <p>Self-directed Learning</p>
+            <span> May 2024 - present </span>
+          </li>
+          <li>
+            <h3>B.A. in Foreign Languages (English)</h3>
+            <p>Minsk State Linguistic University</p>
+            <span> September 2018 - June 2023 </span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/mariarp10">
+            <img src="" alt="GitHub logo" />
+            mariarp10
+          </a>
+        </li>
+        <li>
+          <time datetime="2025-07-07">Jul 2025</time>
+        </li>
+        <li>
+          <a href="https://rs.school/courses/javascript">
+            <img src="" alt="RS School logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
