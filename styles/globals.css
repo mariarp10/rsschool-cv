@@ -6,6 +6,10 @@
 
 body {
   margin: 0;
+  max-inline-size: 1440px;
+  min-inline-size: 375px;
+  font-family: 'RobotoMono', monospace;
+  color: var(--primary-text-color, #FFFFFF);
 }
   
 h1,
@@ -27,4 +31,10 @@ ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  color: var(--accent-color);
+  font-family: 'CutiveMono';
+  text-underline-offset: 5px;
 }
