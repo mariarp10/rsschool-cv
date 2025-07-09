@@ -45,12 +45,12 @@
 }
 
 .header__title {
-  font-variation-settings: "wght" 700;
+  font-variation-settings: "wght" 800;
   font-size: 3rem;
 }
 
 .header__subtitle {
-  font-variation-settings: "wght" 200;
+  font-variation-settings: "wght" 600;
 }
 
 .main {
@@ -74,4 +74,13 @@
 .contact-info__list-logo {
   width: 20px;
   vertical-align: text-bottom;
+}
+
+.summary__content {
+  padding: 0.5rem 0;
+}
+
+.skills__list {
+  padding: 0.5rem 0;
+  list-style: disc inside;
 }
