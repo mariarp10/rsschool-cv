@@ -84,3 +84,41 @@
   padding: 0.5rem 0;
   list-style: disc inside;
 }
+
+.code-container {
+  max-width: 100%;
+  white-space: pre-wrap;
+  background: var(--background-color);
+  padding: 0;
+  font-family: "CutiveMono", monospace;
+  line-height: 1;
+}
+
+.token.parameter {
+  color: #E09ECF;
+}
+
+.token.keyword {
+  color: #E621B0;
+  font-weight: bold;
+}
+.token.string {
+  color: #DF6CBF;
+}
+.token.number {
+  color: #0CE4E7;
+}
+.token.function {
+  color: #06A6A8;
+}
+.token.operator {
+  color: #E09ECF;
+}
+.token.punctuation {
+  color: #E3AF09;
+}
+
+.token.class-name {
+  color: #77DCDE;
+}
+

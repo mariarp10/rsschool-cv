@@ -125,16 +125,9 @@
         <h2 class="code-examples__title">Code Examples</h2>
         <ul class="code-examples__list">
           <li class="code-examples__list-item">
+            The function finds the unique number in an array where all other numbers appear more than once.
             <pre class="code-container">
-              <code class="code-block">
-/**
-* Finds the unique number in an array where all other numbers appear more than once.
-*
-* @param {number[]} arr - An array of numbers that contains exactly one unique number.
-* @returns {number} The unique number that appears only once in the array.
-
-@timecomplexity O(n) - It loops through the array twice: once to count and once to find the unique number.
-*/
+              <code class="language-js">
 function findUniq(arr) {
 const counter = new Map();
 let unique;
@@ -154,44 +147,34 @@ return unique;
 }
               </code>
             </pre>
+
           </li>
           <li class="code-examples__list-item">
+            The function solves a quadratic equation of the form ax² + bx + c = 0. Uses a cache to store square root values for repeated discriminants.
             <pre class="code-container">
-              <code class="code-block">
-/**
-* Solves a quadratic equation of the form ax² + bx + c = 0.
-* Uses a cache to store square root values for repeated discriminants.
-*
-* @param {number} a - The coefficient of x².
-* @param {number} b - The coefficient of x.
-* @param {number} c - The constant term.
-* @returns {(number[]|undefined)} An array of real solutions, or undefined if there are no real solutions.
-*/
-const sqrtCache = new Map();
-                 
+              <code class="language-js">
+const sqrtCache = new Map();                 
 function solveQuadratic(a, b, c) {
 if (a === 0) {
 if (b === 0) return;
   return [-c / b];
 }
-                 
-const D = b ** 2 - 4 * a * c;
-                 
+const D = b ** 2 - 4 * a * c;                 
 if (D &lt; 0) return;
-  if (D === 0) return [-b / (2 * a)];
-                 
+  if (D === 0) return [-b / (2 * a)];                 
 let sqrtD;
 if (sqrtCache.has(D)) {
   sqrtD = sqrtCache.get(D);
 } else {
   sqrtD = Math.sqrt(D);
   sqrtCache.set(D, sqrtD);
-}
-                 
+}                 
 return [(-b + sqrtD) / (2 * a), (-b - sqrtD) / (2 * a)];
 }                    
               </code>
             </pre>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
           </li>
         </ul>
       </section>
