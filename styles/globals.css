@@ -34,7 +34,6 @@ ol {
 }
 
 a {
-  color: var(--accent-color);
+  color: inherit;
   font-family: 'CutiveMono';
-  text-underline-offset: 5px;
 }
