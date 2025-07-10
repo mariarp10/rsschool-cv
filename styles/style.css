@@ -122,3 +122,64 @@
   color: #77DCDE;
 }
 
+.projects__list {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+}
+
+.project-card {
+  background-color: #0d0d0d;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__subtitle {
+  font-style: italic;
+}
+
+.card__description {
+  padding: 0.7rem 0;
+}
+
+.card__tags-list {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.card__tags-list-item {
+  background-color: var(--accent-color);
+  color: var(--primary-text-color);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.link-icon {
+  width: 15px;
+  vertical-align: text-top;
+}
+
+.card__links-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.card__links-list-link {
+  text-decoration: none;
+}
+
+.card__links-list-link:hover {
+  color: var(--accent-color);
+}
+
+.card__links-list-link:active .link-text {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.projects__subtitle {
+  padding: 0.5rem 0;
+}
+
