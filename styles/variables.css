@@ -1,6 +1,8 @@
 :root {
     /* colors */
-    --background-color: #292A2D;
-    --primary-text-color: #FFFFFF;
-    --accent-color: #E621B0;
+    --background-color: #2A2B2F;
+    --card-background-color: #242529;
+    --title-color: #fff;
+    --primary-text-color: #CECECF;
+    --accent-color: #6260E5;
 }
