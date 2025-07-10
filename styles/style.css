@@ -1,8 +1,8 @@
 .page-body {
   background-color: var(--background-color);
-  padding: 0 5rem;
   display: flex;
   flex-direction: column;
+  padding: 0 5rem;
 }
 
 .header {
@@ -218,4 +218,59 @@
   padding-left: 1rem;
   list-style: disc outside;
 }
+
+.education__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.education-card__dates {
+  font-variation-settings: "wght" 200;
+}
+
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.languages__level {
+  font-variation-settings: "wght" 200;
+}
+
+.footer-divider {
+  color: var(--primary-text-color);
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.school-logo {
+  width: 120px;
+}
+
+.footer__links-link:hover {
+  color: var(--accent-color)
+}
+
+.footer__links-link {
+  text-decoration: none;
+}
+
+.footer__links-link:active .link-text {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+
 
