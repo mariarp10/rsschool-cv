@@ -128,7 +128,7 @@
   gap: 3rem;
 }
 
-.project-card {
+.card-decoration {
   background-color: #0d0d0d;
   padding: 1rem;
   border-radius: 15px;
@@ -181,5 +181,41 @@
 
 .projects__subtitle {
   padding: 0.5rem 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card__company-link {
+  font-family: "RobotoMono", monospace;
+  text-decoration: none;
+}
+
+.card__company-link:hover {
+  color: var(--accent-color);
+}
+
+.card__company-link:active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.card__company-dates {
+  display: block;
+  font-variation-settings: "wght" 200;
+}
+
+.card__results-list {
+  padding-left: 1rem;
+  list-style: disc outside;
 }
 
