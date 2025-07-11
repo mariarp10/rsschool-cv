@@ -57,6 +57,7 @@ html {
 .hero__title {
   padding-block: 0.5rem;
   font-size: 4rem;
+  text-align: center;
 }
 
 .hero__subtitle {
