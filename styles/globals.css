@@ -8,8 +8,6 @@ body {
   margin: 0;
   max-inline-size: 1440px;
   min-inline-size: 375px;
-  font-family: 'RobotoMono', monospace;
-  color: var(--primary-text-color, #FFFFFF);
 }
   
 h1,
@@ -35,5 +33,4 @@ ol {
 
 a {
   color: inherit;
-  font-family: 'CutiveMono';
 }
