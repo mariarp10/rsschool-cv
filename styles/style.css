@@ -2,12 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+.section-title,
+.hero__title, 
+.project-card__title,
+.experience-card__title,
+.experience-card__subtitle,
+.education__title {
+  color: var(--title-color, #fff);
+}
+
 .page {
-  font-family: 'RobotoMono', monospace;
-  color: var(--primary-text-color, #CECECF);
-  background-color: var(--background-color, #2A2B2F);
-  padding-inline: clamp(1rem, -0.408rem + 6.009vw, 5rem);
   margin: 0 auto;
+  padding-inline: clamp(1rem, -0.408rem + 6.009vw, 5rem);
+  color: var(--primary-text-color, #CECECF);
+  font-family: 'RobotoMono', monospace;
+  background-color: var(--background-color, #2A2B2F);
 }
 
 .navigation {
@@ -16,11 +25,11 @@ html {
 
 .navigation__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
   gap: 2rem;
   row-gap: 0.2rem;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .link {
@@ -69,27 +78,17 @@ html {
   font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
 
-.section-title,
-.hero__title, 
-.project-card__title,
-.experience-card__title,
-.experience-card__subtitle,
-.education__title {
-  color: var(--title-color, #fff);
-}
-
 .hero__profile-image {
   display: block;
-  width: 300px;
   border-radius: 50%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 .header__title {
-  font-variation-settings: "wght" 800;
   font-size: 3rem;
+  font-variation-settings: "wght" 800;
 }
 
 .header__subtitle {
@@ -100,8 +99,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
   gap: 2rem;
+  width: 100%;
 }
 
 .contacts {
@@ -110,15 +109,14 @@ html {
 
 .contacts__list {
   display: flex;
-  justify-content: space-between;
-  padding-block: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1rem;
   row-gap: 0.5rem;
+  padding-block: 1rem;
 }
 
 .contacts__icon {
-  width: 25px;
   vertical-align: text-bottom;
 }
 
@@ -127,8 +125,8 @@ html {
 }
 
 .bullet-list {
-  padding-block: 1rem 0;
   padding-inline: 1rem 0;
+  padding-block: 1rem 0;
   list-style: disc;
 }
 
@@ -138,12 +136,12 @@ html {
 
 .code__container {
   max-width: 100%;
-  white-space: pre-wrap;
-  background: var(--card-background-color, #242529) ;
-  font-family: "CutiveMono", monospace;
-  line-height: 1;
   margin-block: 1rem 0;
   padding-inline-start: 1.5rem;
+  font-family: "CutiveMono", monospace;
+  line-height: 1;
+  background: var(--card-background-color, #242529);
+  white-space: pre-wrap;
 }
 
 .token.parameter {
@@ -154,18 +152,23 @@ html {
   color: #E621B0;
   font-weight: bold;
 }
+
 .token.string {
   color: #DF6CBF;
 }
+
 .token.number {
   color: #0CE4E7;
 }
+
 .token.function {
   color: #06A6A8;
 }
+
 .token.operator {
   color: #E09ECF;
 }
+
 .token.punctuation {
   color: #E3AF09;
 }
@@ -183,11 +186,11 @@ html {
 
 .project-card,
 .experience-card {
-  background-color: var(--card-background-color, #242529) ;
-  padding-block: 1rem;
-  padding-inline: 1rem;
   border-radius: 15px;
+  padding-inline: 1rem;
+  padding-block: 1rem;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  background-color: var(--card-background-color, #242529) ;
 }
 
 .project-card__app-type {
@@ -200,22 +203,21 @@ html {
 
 .project-card__tags-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-block: 0.5rem;
-  flex-wrap: wrap;
 }
 
 .project-card__tag {
-  background-color: var(--accent-color, #6260E5);
-  color: var(--primary-text-color, #CECECF);
-  padding-block: 0.5rem;
-  padding-inline: 1rem;
   border-radius: 20px;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  color: var(--primary-text-color, #CECECF);
   font-size: 0.8rem;
+  background-color: var(--accent-color, #6260E5);
 }
 
 .link-icon {
-  width: 15px;
   vertical-align: text-top;
 }
 
@@ -234,8 +236,8 @@ html {
 
 .experience-card__dates {
   display: block;
-  font-variation-settings: "wght" 200;
   padding-block: 0.5rem;
+  font-variation-settings: "wght" 200;
 }
 
 .experience-card__project-intro {
@@ -261,8 +263,8 @@ html {
 }
 
 .languages__list {
-  padding-block: 1rem;
   gap: 0.5rem;
+  padding-block: 1rem;
 }
 
 .languages__level {
@@ -270,8 +272,8 @@ html {
 }
 
 .footer__divider {
-  color: var(--primary-text-color, #CECECF);
   width: 100%;
+  color: var(--primary-text-color, #CECECF);
 }
 
 .footer {
@@ -283,14 +285,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: end;
-}
-
-.footer-logo {
-  width: 50px;
-}
-
-.school-logo {
-  width: 120px;
 }
 
 @media (width <= 1340px) {
