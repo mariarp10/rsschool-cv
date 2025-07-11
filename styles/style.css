@@ -6,7 +6,7 @@ html {
   font-family: 'RobotoMono', monospace;
   color: var(--primary-text-color, #CECECF);
   background-color: var(--background-color, #2A2B2F);
-  padding-inline: 5rem;
+  padding-inline: clamp(1rem, -0.408rem + 6.009vw, 5rem);
   margin: 0 auto;
 }
 
@@ -292,5 +292,11 @@ html {
 
 .school-logo {
   width: 120px;
+}
+
+@media (width < 768px) {
+  .navigation {
+    display: none;
+  }
 }
 
