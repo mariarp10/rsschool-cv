@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'CutiveMono';
+    src:
+        local('CutiveMono'), 
+        url('CutiveMono-Regular.woff2') format('woff2');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMono';
+    src: 
+        local('RobotoMono'),
+        url('RobotoMono-VariableFont_wght.woff2') format('woff2 supports variations'),
+        /* fallback with older format for variable font support */
+        url('RobotoMono-VariableFont_wght.woff2') format('woff2-variations');
+    font-display: swap;
+    /* font weight range */
+    font-weight: 100 700;
+    font-style: normal;
+}
