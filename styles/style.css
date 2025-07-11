@@ -5,7 +5,7 @@ html {
 .page {
   font-family: 'RobotoMono', monospace;
   color: var(--primary-text-color, #CECECF);
-  background-color: var(--background-color);
+  background-color: var(--background-color, #2A2B2F);
   padding: 0 5rem;
   margin: 0 auto;
 }
@@ -28,18 +28,18 @@ html {
 }
 
 .link:hover {
-  color: var(--accent-color);
+  color: var(--accent-color, #6260E5);
   transition: color 0.2s;
 }
 
 .link:active .link-text {
-  color: var(--accent-color);
+  color: var(--accent-color, #6260E5);
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
 .link:focus-visible {
-  outline: 2px solid var(--accent-color);
+  outline: 2px solid var(--accent-color, #6260E5);
   outline-offset: 2px; 
 }
 
@@ -73,7 +73,7 @@ html {
 .experience-card__title,
 .experience-card__subtitle,
 .education__title {
-  color: var(--title-color);
+  color: var(--title-color, #fff);
 }
 
 .hero__profile-image {
@@ -138,7 +138,7 @@ html {
 .code__container {
   max-width: 100%;
   white-space: pre-wrap;
-  background: var(--card-background-color);
+  background: var(--card-background-color, #242529) ;
   font-family: "CutiveMono", monospace;
   line-height: 1;
   margin-block-start: 1rem;
@@ -183,7 +183,7 @@ html {
 
 .project-card,
 .experience-card {
-  background-color: var(--card-background-color);
+  background-color: var(--card-background-color, #242529) ;
   padding: 1rem;
   border-radius: 15px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
@@ -205,8 +205,8 @@ html {
 }
 
 .project-card__tag {
-  background-color: var(--accent-color);
-  color: var(--primary-text-color);
+  background-color: var(--accent-color, #6260E5);
+  color: var(--primary-text-color, #CECECF);
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -270,7 +270,7 @@ html {
 }
 
 .footer__divider {
-  color: var(--primary-text-color);
+  color: var(--primary-text-color, #CECECF);
   width: 100%;
 }
 
