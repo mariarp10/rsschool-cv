@@ -6,12 +6,12 @@ html {
   font-family: 'RobotoMono', monospace;
   color: var(--primary-text-color, #CECECF);
   background-color: var(--background-color, #2A2B2F);
-  padding: 0 5rem;
+  padding-inline: 5rem;
   margin: 0 auto;
 }
 
 .navigation {
-  padding: 2.5rem 0;
+  padding-block: 2.5rem;
 }
 
 .navigation__list {
@@ -51,11 +51,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.5rem 0;
+  padding-block: 3.5rem;
 }
 
 .hero__title {
-  padding: 0.5rem 0;
+  padding-block: 0.5rem;
   font-size: 4rem;
 }
 
@@ -113,7 +113,7 @@ html {
 .contacts__list {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding-block: 1rem;
   flex-wrap: wrap;
 }
 
@@ -123,16 +123,17 @@ html {
 }
 
 .section-content {
-  padding: 1rem 0;
+  padding-block: 1rem;
 }
 
 .bullet-list {
-  padding: 1rem 0 0.5rem 1rem;
+  padding-block: 1rem 0;
+  padding-inline: 1rem 0;
   list-style: disc;
 }
 
 .code__example {
-  padding: 1rem 0;
+  padding-block: 1rem;
 }
 
 .code__container {
@@ -141,8 +142,7 @@ html {
   background: var(--card-background-color, #242529) ;
   font-family: "CutiveMono", monospace;
   line-height: 1;
-  margin-block-start: 1rem;
-  margin-block-end: 0;
+  margin-block: 1rem 0;
   padding-inline-start: 1.5rem;
 }
 
@@ -184,7 +184,8 @@ html {
 .project-card,
 .experience-card {
   background-color: var(--card-background-color, #242529) ;
-  padding: 1rem;
+  padding-block: 1rem;
+  padding-inline: 1rem;
   border-radius: 15px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
@@ -194,20 +195,21 @@ html {
 }
 
 .project-card__description {
-  padding: 1rem 0;
+  padding-block: 1rem;
 }
 
 .project-card__tags-list {
   display: flex;
   gap: 1rem;
-  padding: 0.5rem 0;
+  padding-block: 0.5rem;
   flex-wrap: wrap;
 }
 
 .project-card__tag {
   background-color: var(--accent-color, #6260E5);
   color: var(--primary-text-color, #CECECF);
-  padding: 0.5rem 1rem;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
   border-radius: 20px;
   font-size: 0.8rem;
 }
@@ -223,7 +225,7 @@ html {
 }
 
 .experience__cards-list {
-  padding: 1rem 0;
+  padding-block: 1rem;
 }
 
 .experience-card__company .link {
@@ -233,12 +235,11 @@ html {
 .experience-card__dates {
   display: block;
   font-variation-settings: "wght" 200;
-  padding-block-start: 0.5rem;
-  padding-block-end: 0.5rem;
+  padding-block: 0.5rem;
 }
 
 .experience-card__project-intro {
-  padding: 1rem 0;
+  padding-block: 1rem;
 }
 
 .plain-list {
@@ -256,8 +257,7 @@ html {
 }
 
 .education__establishment {
-  padding-block-start: 0.2rem;
-  padding-block-end: 0.7rem;
+  padding-block: 0.2rem 0.7rem;
 }
 
 .languages__list {
@@ -276,7 +276,7 @@ html {
 
 .footer {
   width: 100%;
-  padding: 1.5rem 0;
+  padding-block: 1.5rem;
 }
 
 .footer__links {
